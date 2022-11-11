@@ -84,11 +84,11 @@ spec:
         - "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxxxx"
         - "--port"
         - "5233"
-        volumeMounts:
-        - name: timezone-volume
-          mountPath: /etc/localtime
-          readOnly: true
-      volumes:
-      - name: timezone-volume
-        hostPath:
-          path: /usr/share/zoneinfo/Asia/Shanghai
+#        volumeMounts:
+#        - name: timezone-volume
+#          mountPath: /etc/localtime
+#          readOnly: true
+#      volumes:
+#      - name: timezone-volume
+#        hostPath:
+#          path: /usr/share/zoneinfo/Asia/Shanghai
